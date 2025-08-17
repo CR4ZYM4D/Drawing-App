@@ -135,6 +135,10 @@ class DrawingView(context: Context): View(context){
 
     }
 
+    fun getBrushSize(): Int{
+        return brushSize.toInt()
+    }
+
     internal inner class FingerPath(var color: Int, var brushThickness: Float): Path()
 
 }
