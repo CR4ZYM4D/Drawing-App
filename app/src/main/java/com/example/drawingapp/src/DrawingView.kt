@@ -11,6 +11,8 @@ import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
 import androidx.core.graphics.createBitmap
+import androidx.core.graphics.toColor
+import androidx.core.graphics.toColorInt
 
 
 class DrawingView(context: Context): View(context){
@@ -114,6 +116,11 @@ class DrawingView(context: Context): View(context){
         // fancy things so that it doesn't change drastically for same values with different res devices
         brushSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, newBrushSize, resources.displayMetrics)
         drawPaint.strokeWidth = brushSize
+    }
+
+    fun changeBrushColor(newColor: String){
+
+        color = newColor.toColorInt()
 
     }
 

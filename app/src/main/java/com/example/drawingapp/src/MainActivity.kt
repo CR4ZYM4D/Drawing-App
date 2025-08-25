@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 import com.example.drawingapp.functionality.ChangeBrushSize
+import com.example.drawingapp.functionality.EraseLine
 import com.example.drawingapp.ui.theme.DrawingAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -51,7 +52,7 @@ class MainActivity : ComponentActivity() {
                         Row(
 
                             verticalAlignment = Alignment.Bottom) {
-                            ChangeBrushSize(
+                            EraseLine(
                                 it,
                                 modifier = Modifier
                                     .padding(innerPadding)
