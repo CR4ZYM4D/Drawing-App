@@ -11,7 +11,6 @@ import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
 import androidx.core.graphics.createBitmap
-import androidx.core.graphics.toColor
 import androidx.core.graphics.toColorInt
 
 
